@@ -1,13 +1,8 @@
 <?php
-    session_start();
-    $users = [
-        ['id'=>1, 'name'=>'alamin', 'email'=>'alamin@aiub.edu'],
-        ['id'=>2, 'name'=>'xyz', 'email'=>'xyz@aiub.edu'],
-        ['id'=>3, 'name'=>'pqr', 'email'=>'pqr@aiub.edu'],
-        ['id'=>4, 'name'=>'abc', 'email'=>'abc@aiub.edu'],
-    ];
 
-    $_SESSION['users'] = $users;
+    require_once('../model/userModel.php');
+    session_start();
+    $users = getAllUser();
 ?>
 
 <html lang="en">
