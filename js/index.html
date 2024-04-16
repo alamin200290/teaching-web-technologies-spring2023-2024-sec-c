@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <title>JS Example</title>
+</head>
+<body>
+        <h1>JS Example</h1>
+        <input type="text" name="username" id="username" value="" onkeyup="test()" />
+        <input type="button" name="" id="" value="Click" onclick="test()">
+
+        <script>
+            // name = "alamin";
+            // var name ='alamin';
+            // let name = "alamin";
+
+            // let std = ['alamin', 3.5, 'alamin@aiub.edu'];
+            // function sum(a, b){
+            //     return a+b;
+            // }
+
+            // let sum = function (a,b){
+            //     return a+b;
+            // }
+
+            // let sum = (a,b)=>a+b;
+
+            // if(){
+
+            // }else{
+
+            // }
+
+            // for(let i=0;i<10;i++){
+
+            // }
+            //alert('test');
+            //document.write('Test from JS');
+            function test(){
+                let username = document.getElementById('username').value;
+                let obj = document.getElementsByTagName('h1')[0];
+
+                if(username != ""){
+                    obj.innerHTML = username;
+                    obj.style.color = 'red';
+                }else{
+                    obj.innerHTML = "null data";
+                }
+                //console.log('test');
+            }
+        </script>
+</body>
+</html>
